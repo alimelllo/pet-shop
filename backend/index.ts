@@ -14,10 +14,11 @@ const swaggerFile = require('./swagger_output.json')
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 export const server = app.listen(8081, () => {
-  console.log(`⚡️ [server]: pet shop Server is running at https://localhost:${8081}`);
+  console.log(`pet shop Server is running at https://localhost:${6060}`);
 })
-server.timeout = 1000000;
 
+
+server.timeout = 1000000;
 
 dotenv.config();
 
