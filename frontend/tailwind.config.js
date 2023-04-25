@@ -20,8 +20,8 @@ module.exports = {
   'lg': {'max': '1023px'},
   // => @media (max-width: 1023px) { ... }
 
-  'md': {'max': '860px'},
-  // => @media (max-width: 767px) { ... }
+  'md': {'max': '870px'},
+  // => @media (max-width: 860px) { ... }
 
   'sm': {'max': '450px'},
   // => @media (max-width: 639px) { ... }

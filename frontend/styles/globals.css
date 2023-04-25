@@ -14,8 +14,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-
-  background: linear-gradient(90deg, #ebebeb 0%, rgb(255, 255, 255) 30%, rgb(241, 241, 241) 100%);
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -23,13 +21,9 @@ body {
   box-sizing: border-box;
 }
 
-.boxShadow{
-  box-shadow:  20px 20px 40px #0b0b0b,
-             -20px -20px 40px #0b0b0b;
-}
-.boxShadow2x{
-  box-shadow:  30px 30px 50px #0b0b0b,
-             -30px -30px 50px #0b0b0b;
+.innerShadow{
+  box-shadow: inset 5px 5px 10px #a3a3a3,
+            inset -5px -5px 10px #ffffff;
 }
 
 
@@ -58,4 +52,23 @@ body {
 
 .rtl{
   direction: rtl;
+}
+
+
+
+
+.logoAnimation{
+  animation: logoAnimation 1.2s ease-out forwards;
+  transition: all 1s ease-out;
+}
+
+@keyframes logoAnimation {
+  from {
+    opacity: 0.2;
+    transform: translateY(-20rem);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0); 
+  }
 }
